@@ -1,0 +1,258 @@
+
+.Presentacion{
+    height: 30px;
+}
+
+
+.Caja1, .Caja2, .Caja3{
+    background-color: rgba(173, 127, 173, 0.8);
+    font-size: 10px;
+    color: rgb(134, 38, 105);
+    text-align: center;
+    filter: opacity(1);
+    width: 25%;
+    /* border-radius: 10px; */
+    /* border: 5px solid rgb(98, 45, 98); */
+   
+    margin: 40px;   
+    display: inline-block;
+    transition: all 0.5s ease;
+    
+}
+.Caja1{
+    /* position: relative; */
+
+}
+
+.Caja2{
+    position: absolute;
+    bottom: -30%;
+    
+}
+
+
+
+.Caja3{
+    float: right;
+    width: 30%;
+    position: absolute;
+    bottom: -15%;
+    left: 60%;
+}
+
+.Caja1:hover, .Caja2:hover,
+.Caja3:hover{
+    transform: scale(1.1);
+    
+    
+}
+
+
+
+
+
+.Caja1 .Subtitulo01,
+.Caja2, .Subtitulo02,
+.Caja3, .Subtitulo03{
+    background-color: rgba(173, 127, 173, 0.8);
+    font-size: 20px;
+    color: rgb(134, 38, 105);
+    text-align: center;
+    filter: opacity(1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px;
+}
+
+span{
+    color: rgb(59, 18, 47);
+}
+
+
+
+.Fondo{
+    background-image: url("../imgs/FondoAifos2.png");
+    filter: opacity(1);
+    /* filter: blur(5px); */
+   position: absolute;
+   right: 5%;
+   height: 200%;
+    
+}
+
+
+
+.FundadorasTitulo{
+    width: 100%;
+    text-align: center;
+    background-color: rgba(144, 93, 144, 0.9); 
+    filter: opacity(1);
+    color: rgb(80, 32, 80);
+}
+
+.FundadorasTitulo h1{
+    background-color:  rgba(133, 73, 133, 0.7);
+    margin-top: 100%;
+    
+}
+
+.Fundadores{
+    display: inline-flex;
+    background-color: rgba(155, 100, 155, 0.3);
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.Ana, .Naty,
+.Ivan{
+    border-radius: 20px;
+    background-color: rgb(207, 137, 204);
+    margin: 7%;
+    border: 3px solid rgb(151, 88, 148);;
+    padding: 0;
+    text-align: center;
+    max-width: 20%;
+    filter: opacity(1);
+    margin-top: 2%;
+    transition: all 0.5s ease;
+    
+
+}
+
+.Ana:hover, .Naty:hover,
+.Ivan:hover{
+    transform: scale(1.1);
+}
+    
+    
+
+
+
+.Ana img, 
+.Naty img,
+.Ivan img{
+    border-radius: 50%;
+    border: 10px solid rgb(195, 131, 192);
+}
+
+.Ana h2, .Naty h2,
+.Ivan h2{
+    color: rgb(100, 41, 102);
+    font-size: 20px;
+    background-color: rgb(168, 88, 162);
+    margin: 0;
+    padding: 0;
+}
+
+.Ana p, .Naty p,
+.Ivan p{
+    color: rgb(80, 43, 80);
+    font-size: 18px;
+}
+
+.Pie{
+    width: 100%;
+    float: both;
+    background-color: rgb(75, 36, 87);
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    margin-top: 0%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:480px){
+
+    /* Titulo - Botonera - Texto */
+    .Caja1, .Caja2{
+        width: 100%;
+        display:  block;
+        padding: 5%;
+        position: static;
+        margin-top: 0%;
+        margin: 0;
+    }
+
+    
+    .Caja1 .Subtitulo01,
+    .Caja2, .Subtitulo02,
+    .Caja3, .Subtitulo03{
+        margin: 0;
+        
+    } 
+    
+    .Caja1 .Subtitulo01 p,
+    .Caja2, .Subtitulo02 p,
+    .Caja3, .Subtitulo03 p{
+        /* width: 100%; */
+        text-align: center;
+        padding: 2%;
+      
+        
+        
+        
+    }
+    .Caja3{
+        width: 100%;
+        position: static;
+        float: none;
+        margin: 0;
+    }
+  
+    
+    
+    .Caja3 .Subtitulo01 p{
+        margin: 0;
+        
+    }
+    
+    
+
+    .container{
+        display: none;
+    }
+    /* Fundadores */
+
+    .FundadorasTitulo{
+        width: 100%;
+        text-align: center;
+        background-color: rgba(144, 93, 144, 0.9); 
+        filter: opacity(1);
+        color: rgb(80, 32, 80);
+        margin: 0;
+        text-align: center;
+        
+    }
+    
+    .FundadorasTitulo h1{
+        background-color:  rgba(133, 73, 133, 0.7);
+        margin-top: 250%
+        
+    }
+    
+    .Fundadores{
+        
+        background-color: rgba(155, 100, 155, 0.3);
+        margin: 0;
+        padding: 0;
+        margin-top: 10%;
+        position: relative;
+        display: block;
+    }
+    
+    .Ana, .Naty, .Ivan{
+        position: static;   
+        display: block;
+        max-width: 100%;
+    }
+
+    
+
+}

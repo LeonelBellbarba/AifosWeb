@@ -1,0 +1,173 @@
+
+main{
+    background-color: rgba(223, 77, 201, 0.4);
+    background-image: url(../imgs/FondoAifos2.png);
+}
+
+.textoCobradoras{
+
+    font-size: 18px;
+    background-color: rgba(197, 117, 204, 0.8);
+    text-align: center;
+    /* filter: opacity(90%); */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 2%;
+    width: 100%;
+    padding: 3%;
+    
+    
+    
+
+
+}
+
+.textoCobradoras .condiciones{
+    font-family: cursive;
+    color: rgb(110, 30, 110);
+    background-color: rgba(165, 91, 172, 0.6);
+
+}
+
+
+.Cobradoras{
+    
+    padding: 0;
+    display: grid;
+  
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+}
+
+.Rocio, .Laura{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(194, 159, 192, 0.5);
+    color: rgb(73, 29, 73);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    border: 1px solid rgb(105, 62, 103);
+    
+    text-align: center;
+   
+    /* filter: opacity(1); */
+    
+   
+    
+
+}
+
+.Rocio:hover, .Laura:hover{
+    background-color: rgba(61, 37, 60, 0.7);
+    color: rgb(218, 175, 197);
+    filter: opacity(1);
+    
+    
+}
+
+.Rocio .Nombre,
+.Laura .Nombre{
+    margin: 10px;
+    padding: 0;
+    background-color: rgba(87, 46, 87, 0.5);
+} 
+
+.Cobradoras img{
+    /* border-radius: 70px; */
+    border: 10px solid rgba(58, 21, 58, 0.8);
+    padding: 0;
+    margin: 20px;
+    text-align: center;
+    filter: opacity(1);
+    
+    
+
+}
+
+.Cobradoras .BotonCobradora{
+    color: rgb(45, 9, 46);
+    background-color: rgba(132, 64, 149, 0.7);
+    border: 2px solid rgb(70, 23, 88);
+    border-radius: 3px;
+    font-size: 25px;
+    width: 100%;
+}
+
+.Pie{
+    width: 100%;
+    float: both;
+    background-color: rgb(75, 36, 87);
+    height: 30px;
+    position: absolute;
+    text-align: center;
+    margin-top: 0;
+    
+}
+
+@media screen and (max-width:480px){
+
+    
+    .Cobradoras{
+        width: 100%;
+        display: block;
+       
+    }
+
+    .Rocio, .Laura{
+        margin: 0;
+        padding: 0;
+        background-color: rgba(194, 159, 192, 0.5);
+        color: rgb(73, 29, 73);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+        border: 1px solid rgb(105, 62, 103);
+        margin-top: 5%;
+        text-align: center;
+        width: 100%;
+       
+    
+        /* filter: opacity(1); */
+        
+       
+        
+    
+    }
+    
+    
+    
+    .Rocio .Nombre,
+    .Laura .Nombre{
+        
+        width: 100%;
+        text-align: center;
+        background-color: rgba(87, 46, 87, 0.5);
+    } 
+    
+    .Cobradoras img{
+        /* border-radius: 70px; */
+        border: 10px solid rgba(58, 21, 58, 0.8);
+        padding: 0;
+        margin: 20px;
+        text-align: center;
+        filter: opacity(1);
+        
+        
+    
+    }
+
+    .Rocio p, .Laura p{
+        width: 100%;
+
+    }
+    
+    .Cobradoras .BotonCobradora{
+        color: rgb(45, 9, 46);
+        background-color: rgba(132, 64, 149, 0.7);
+        border: 2px solid rgb(70, 23, 88);
+        border-radius: 3px;
+        font-size: 25px;
+        width: 100%;
+    }
+    
+
+}

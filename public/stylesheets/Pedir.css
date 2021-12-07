@@ -1,0 +1,145 @@
+.row{
+    background-image: url(../imgs/PedirFondo.jpg);
+    padding: 30px;
+    margin-left: 5%;
+    /* border: 5px solid rgb(180, 90, 90); */
+    border-radius: 10px;
+}
+
+
+#TipoMochila img{
+  display: block;
+  margin: auto;
+  
+}
+
+
+#TipoMochila, #TipoAtuendo,  #TipoDecoracion, 
+#TipoElectrodomesticos,  #TipoCalzado,
+#TipoUñas{
+    width: 100%;
+    display: inline-flex;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+
+
+    
+    
+    
+  }
+
+  #TipoMochila img, #TipoAtuendo img,  #TipoDecoracion img, 
+  #TipoElectrodomesticos img,  #TipoCalzado img,
+  #TipoUñas img{
+      
+      border: 10px solid rgb(97, 61, 97);
+      margin: auto;
+    }
+
+
+.MochilaCaja, .AtuendoCaja, .DecoracionCaja,
+.ElectroCaja, .CalzadoCaja,  .UñasCaja{
+    background-color: rgba(180, 90, 135, 0.4);
+    text-align: center;
+    
+    border: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: rgb(80, 33, 80);
+}
+
+.Encague{
+    margin: 0;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(70, 29, 49);
+    border-bottom: 2px solid rgba(180, 90, 135);
+    border-radius: 5px;
+    height: 50px;
+    
+    
+    
+}
+
+.form-label{
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(77, 32, 88);
+    text-align: center;
+    border-bottom: 2px solid rgb(126, 70, 126);
+}
+
+.form-control{
+    border: 2px solid rgb(119, 39, 108);
+    height: 50px;
+    
+}
+
+select{
+    
+    width: 100%;
+    height: 50px;
+    background-color: rgba(180, 90, 135, 0.7);
+    border-radius: 10px;
+    text-align: center;
+}
+
+input{
+    width: 100%;
+    height: 50px;
+    
+    background-color: rgba(180, 90, 135);
+    border-radius: 10px;
+    text-align: center;
+}
+    
+button{
+    width: 60px;
+    height: 50px;
+    background-color: rgba(180, 90, 135, 0.7);
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.row .AgregarProducto{
+    width: 20%;
+    height: 250px;
+    background-color: rgba(200, 89, 200, 0.637);
+    text-align: center;
+    margin-left: 2%;
+    border: 3px solid rgb(65, 41, 65);
+    border-radius: 5px;
+    
+}
+.row .AgregarProducto h2{
+    margin-top: 40%;
+    font-size: 20px;
+    color: rgb(87, 44, 87);
+ 
+    
+}
+
+.row .AgregarProductoCaja a  {
+    text-decoration: none;
+}
+
+@media screen and (max-width:480px){
+    
+    .row .AgregarProducto{
+        width: 100%;
+        margin: 0;
+        text-align: center;    
+    
+    }
+
+    .row .AgregarProducto h2{
+        margin-top: 20%;
+        font-size: 40px;
+        color: rgb(87, 44, 87);
+     
+        
+    }
+}

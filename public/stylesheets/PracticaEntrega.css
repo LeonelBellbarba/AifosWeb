@@ -1,0 +1,452 @@
+/* font-family: 'Scheherazade New', serif;*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Scheherazade New', serif;
+    background-color: rgb(236, 196, 236);
+    
+    
+}
+
+
+
+
+
+
+/* Cabezera */
+.Cabezera{
+    background-image: url(../imgs/FondoAifos11.jpg);
+    
+    height: 15%;
+    max-width: 120%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+
+
+.Titulo {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    
+    
+}
+
+
+
+
+.LogoInicio{
+    transition: all 0.5s ease;
+}
+
+.LogoInicio:hover{
+    transform: scale(0.9);
+}
+
+.Titulo h1{
+    color: rgb(155, 20, 87);
+    font-style: italic;
+    position: relative;
+    text-align: center;
+    margin: 60px;
+    margin-left: 36%;
+    padding: 0;
+    font-size: 50px;
+    
+}
+.Titulo h2{
+    color: rgb(73, 32, 73);
+    font-style: italic;
+    position: absolute;
+    margin-left: 23%;
+    margin-bottom: 80%;
+    margin-top: 8%;
+    padding: 0;
+    font-size: 35px;
+    
+    text-align: center;
+    
+    
+}
+
+.Titulo{
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+.CondicionesCaja{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    top: -30px;
+    right: 180px;
+    
+
+
+}
+.CondicionesTitulo{
+    color: rgb(59, 24, 59);
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+
+
+.Condiciones{
+    color: rgb(47, 19, 47);
+    font-size: 20px;
+    font-style: italic;
+    text-decoration: none;
+    list-style: url(estrellaLista.png);
+    text-align: left;
+    
+        
+}
+
+/* Botonera */
+.BotoneraCaja{
+    width: 100%;
+    background-color: rgb(153, 61, 153);
+    position: relative;
+    padding-left: 5%;   
+}
+.Botonera{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    width: 90%;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 50px;
+    
+}
+
+
+
+
+
+
+
+.Botonera ul li{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: all 1s ease;
+    
+   
+    
+}
+
+
+.Opciones{
+    
+    color: rgb(51, 13, 38);
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: all 1s ease;
+    
+    
+    
+    
+}
+
+.Opciones:hover{
+   
+    color: rgb(221, 209, 217);
+   
+   
+}
+    
+
+.activoBotonera{
+    color: rgb(221, 209, 217);
+    
+}
+
+
+
+/* Botones de Izquierda */
+
+
+
+
+
+.container img{
+    position: relative;
+}
+
+/* .Mochila1Img{
+    position: absolute;
+    left: 35px;
+    bottom: 20px;
+    text-decoration: none;
+    color: rgb(170, 54, 170);
+    font-size: 30px;
+    background-color: rgb(180, 84, 103, 0.3);
+    font-family: fantasy;
+
+} */
+
+/* .Mochila2Img{
+    position: absolute;
+    left: 60%;
+    bottom: 20px;
+    text-decoration: none;
+    color: rgb(170, 54, 170);
+    font-size: 30px;
+    background-color: rgb(180, 84, 103, 0.3);
+    font-family: fantasy;
+
+} */
+
+.activo{
+    background-color: rgb(150, 74, 153);
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.MercaderiaCaja{
+    position: absolute;
+    left: 160px;
+   
+}
+
+.MercaderiaLista{
+    margin: 0;
+    padding: 0;
+
+    
+}
+
+.Mercaderia{
+    max-width: 25%;
+    justify-content: space-around;
+    margin: 0;
+    margin-bottom: 8px;
+    padding: 20px;
+    list-style: none;
+    display: inline-flex;
+    border-bottom: 10px solid rgb(161, 68, 138);
+    height: 10%;
+    animation-name: Mercaderia;
+    border-radius: 60px;
+    transition: all 1s ease;
+    background-color: rgb(163, 106, 163, 0.4); 
+    
+}
+
+
+
+.Mercaderia:hover{
+    
+    background-color: rgb(143, 84, 143);
+    
+   
+    
+}
+
+.container{
+    /* display: inline-flex; */
+    float: right;
+    position: absolute;
+    left: 5%;
+    margin-top: 20%;
+    
+}
+
+
+.container .carousel .carousel-inner .carousel-item{
+    width: 30%;
+    left: 30%;  
+   
+}
+
+.container .carousel-control-next,
+.container .carousel-control-prev{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+    margin: 0;
+}
+
+
+
+/* .container .carousel-control-next,
+.container .carousel-control-prev{
+    width: 40%;
+}
+
+.container .carousel-control-prev2, 
+.container .carousel-control-next2{
+    width: 100%;
+    
+} */
+
+
+.container .carousel-control-next-icon,
+.container .carousel-control-prev-icon {
+    background-color: black;
+}
+
+.container .carousel-item img{
+    /* display: inline-flex; */
+    float: left;
+    margin: 0;
+    padding: 5px;
+    /* flex-wrap: nowrap; */
+}
+
+.container .carousel-item .terceraImagen{
+    float: left;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+#carouselExampleCaptions{
+    margin-top: 2%;
+    background-color: rgb(143, 72, 107, 0.3)
+}
+
+#carouselExampleCaptions2{
+    margin-top: 10%;
+    background-color: rgb(143, 72, 107, 0.3);
+}
+
+
+
+
+
+
+
+
+
+.Pie{
+    width: 100%;
+    float: both;
+    background-color: rgb(75, 36, 87);
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+@media screen and (max-width:480px){
+
+
+    
+  
+    /* .Cabezera{
+        background-image: url(../imgs/FondoAifos11.jpg);
+    
+        height: 30%;
+        max-width: 50%;
+        margin: 0;
+        padding: 0;
+    } */
+       
+    .Cabezera{
+        background-image: url(../imgs/FondoAifos11.jpg);
+        
+        height: 15%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+
+    .Titulo h1{
+        font-size: 30px;
+        text-align: center;
+        margin-left: 26%;
+        
+    }
+    .Titulo h2{
+        /* margin-bottom: ; */
+       font-size: 0;
+    }
+
+    .BotoneraCaja{
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .Botonera{
+        display: block;
+        padding: 5px;
+        text-align: center;
+        height: 200px;
+        margin-left: 5%;
+
+      
+    }
+
+    
+
+    .CondicionesTitulo{
+        color: rgb(59, 24, 59);
+        font-style: italic;
+        margin: 0;
+        padding: 0;
+    
+    }
+    
+    .Pie{
+        width: 100%;
+        float: both;
+        background-color: rgb(75, 36, 87);
+        height: 50px;
+        position: static;
+        text-align: center;
+        margin-top: 0%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+}
+
