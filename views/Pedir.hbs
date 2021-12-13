@@ -1,0 +1,86 @@
+ <link rel="stylesheet" href="../stylesheets/Pedir.css">
+
+<main>
+        
+        <div class="Datos">
+            <form action="/Pedir" method="post"  class="row g-3">
+
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label" required>Nombre</label>
+                  <input type="text" class="form-control" id="inputEmail4" name="nombre">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label" required>Apellido</label>
+                  <input type="text" class="form-control" id="inputPassword4" name="apellido">
+                </div>
+
+                <div class="col-6">
+                  <label for="inputAddress" class="form-label" required>Direccion</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Guillermo Benitz 148" name="direccion">
+                </div>
+
+                <div class="col-6">
+                  <label for="inputAddress2" class="form-label" required>Numero</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="011-450501"
+                  name="numero">
+                </div>
+                
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">Ciudad</label>
+                  <select id="inputState" class="form-select" name="Ciudad">
+                    <option selected>Las Rosas</option>
+                    <option>Las Parejas</option>
+                    <option>Armstrong</option>
+                    <option>Buque</option>
+                    <option>Tortuga</option>
+                  </select>
+                  
+                </div>
+                  <input type="submit" name="" id="" value="enviar">
+            
+              <p>{{message}}</p>
+                 
+                    <h2 class="Encague">¿Que quiere encargar?</h2>
+
+
+                  <div class="AgregarProductoCaja">
+                    <a href="/Productos">
+                      <div class="AgregarProducto" id="CajaProducto"><h2> + Agregar Producto</h2></div>
+                    </a>
+
+                  </div>
+              </form>
+
+                <script src="../public/javascripts/ListaDePedidos.js">
+                   
+
+             
+
+
+                 
+                 
+
+                </script>
+                  
+                
+
+        </div>
+        
+    
+
+
+
+
+
+
+
+
+    
+        <script src="js/aos.js"></script>
+    
+        <script>
+            AOS.init();
+        </script>
+    
+    </main>

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/PracticaEntrega.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="stylesheets/PracticaEntrega.css">
+    
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
     
     <title>Aifos</title>
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="stylesheets/aos.css">
 </head>
 <body>
 
@@ -34,10 +34,10 @@
     
             <div class="BotoneraCaja">
                 <ul class="Botonera">
-                    <li><a class="Opciones activoBotonera" href="index.html">Home</a></li>
-                    <li><a class="Opciones" href="Productos.html">Productos</a></li> 
-                    <li><a class="Opciones" href="Cobradoras.html">Cobradoras</a></li>
-                    <li><a class="Opciones" href="Pedir.html">Pedir</a></li>
+                    <li><a class="Opciones {{#if isHome}}activoBotonera{{/if}}" href="/">Home</a></li>
+                    <li><a class="Opciones {{#if isProductos}}activoBotonera{{/if}}" href="/Productos">Productos</a></li> 
+                    <li><a class="Opciones {{#if isCobradoras}}activoBotonera{{/if}}" href="/Cobradoras">Cobradoras</a></li>
+                    <li><a class="Opciones {{#if isPedir}}activoBotonera{{/if}}" href="/Pedir">Pedir</a></li>
                 </ul>
     
             </div>

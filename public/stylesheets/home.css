@@ -70,7 +70,7 @@ span{
 
 
 .Fondo{
-    background-image: url("../imgs/FondoAifos2.png");
+    /* background-image: url("images/FondoAifos2.png"); */
     filter: opacity(1);
     /* filter: blur(5px); */
    position: absolute;

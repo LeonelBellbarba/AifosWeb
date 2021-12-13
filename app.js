@@ -1,12 +1,33 @@
+
+
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+
+require('dotenv').config(); //Para que cargue los datos del .env
+
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 var productosRouter = require('./routes/Productos');
+
+// Productos para seleccionar
+var equipajeRouter = require('./routes/Mochilas')
+var atuendosRouter = require('./routes/Atuendos')
+var electrodosRouter = require('./routes/Electrodos')
+var calzadoRouter = require('./routes/Calzado')
+var decoracionRouter = require('./routes/Decoracion')
+var unasRouter = require('./routes/Unas')
+
+
+var cobradorasRouter = require('./routes/Cobradoras');
+var pedirRouter = require('./routes/Pedir');
+
+var loginRouter = require('./routes/admin/login'); //admin/login.js
+
+
 
 var app = express();
 
@@ -25,13 +46,27 @@ app.use(express.static(path.join(__dirname, 'public')));
 //   res.send('index!');
 // })
 
-app.use('/Productos', productosRouter)
+
 
 
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/Prodcutos', productosRouter);
+app.use('/Productos', productosRouter);
+app.use('/Mochilas', equipajeRouter);
+app.use('/Atuendos', atuendosRouter);
+app.use('/Electrodos', electrodosRouter);
+app.use('/Calzado', calzadoRouter);
+app.use('/Decoracion', decoracionRouter);
+app.use('/Unas', unasRouter)
+
+
+
+app.use('/Cobradoras', cobradorasRouter);
+app.use('/Pedir', pedirRouter);
+app.use('/admin/login', loginRouter);
+
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,7 +1,7 @@
 .row{
-    background-image: url(../imgs/PedirFondo.jpg);
+    background-image: url(../images/PedirFondo.jpg);
     padding: 30px;
-    margin-left: 5%;
+  
     /* border: 5px solid rgb(180, 90, 90); */
     border-radius: 10px;
 }
