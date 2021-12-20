@@ -9,6 +9,7 @@ var logger = require('morgan');
 
 
 require('dotenv').config(); //Para que cargue los datos del .env
+var session = require('express-session');
 
 var indexRouter = require('./routes/index');
 var productosRouter = require('./routes/Productos');
@@ -26,6 +27,7 @@ var cobradorasRouter = require('./routes/Cobradoras');
 var pedirRouter = require('./routes/Pedir');
 
 var loginRouter = require('./routes/admin/login'); //admin/login.js
+var adminIntroduccionRouter = require('./routes/admin/introduccion')
 
 
 
@@ -48,6 +50,28 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
+app.use(session({
+  secret: 'asdfasfadadesasarsfasasdadasdsdsad',
+  resave: false,
+  // saveUninitialized:true,
+  cookie:{maxAge:6000}
+  
+}))
+secured = async function(req, res ,next)
+{
+    try{
+        console.log(req.session.id_nombre);
+        if(req.session.id_nombre){
+          next()
+        }else{
+          res.redirect('/admin/login');
+        }
+      }
+    catch(error){
+      console.log(error)
+    }
+}
+
 
 
 app.use('/', indexRouter);
@@ -64,6 +88,8 @@ app.use('/Unas', unasRouter)
 app.use('/Cobradoras', cobradorasRouter);
 app.use('/Pedir', pedirRouter);
 app.use('/admin/login', loginRouter);
+app.use('/admin/introduccion',secured, adminIntroduccionRouter);
+
 
 
 

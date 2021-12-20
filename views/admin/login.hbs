@@ -2,21 +2,25 @@
 <div class="Datos">
     <div class="row">
         <div class="col"> 
-            <form action="">
+            <form action="/admin/login" method="post">
 
                 <div class="col-md-6">
                      <label for="usuario" class="form-label" required>Usuario</label>
-                     <input type="text" class="form-control" id="usuario" name="usuario">
+                     <input type="text" class="form-control" id ="nombre" name="nombre">
                 </div>
 
                 <div class="col-md-6">
                      <label for="password" class="form-label" required>Password</label>
-                     <input type="password" class="form-control" id="password" name="password">
+                     <input type="password" class="form-control" id = "password" name="password">
                 </div>
 
+                <button type="submit" class="btn btn-danger botonLogin">Entrar</button>
             </form>
 
-                <button type="button" class="btn btn-danger botonLogin">Entrar</button>
+            {{#if error}}
+            <p>Los datos son incorrectos</p>
+            {{/if}}
+
 
         </div>
 
