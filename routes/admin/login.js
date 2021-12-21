@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var usuariosModels = require('../../models/usuariosModels');
+var usuariosModels = require('./../../models/usuariosModels');
 
 
 // recibir y mostrar la vista de admin/login

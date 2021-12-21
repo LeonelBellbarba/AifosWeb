@@ -86,7 +86,7 @@
 
 
 .Mochilas, .Atuendos, .Decoracion,
-.Electrodo, .Calzado, .Uñas{
+.Electrodo, .Calzado, .Unas{
     position: absolute;
     border: 2px solid rgb(85, 29, 73);
     transition: all 1s ease;
@@ -94,7 +94,7 @@
 }
 
 .Mochilas:hover, .Atuendos:hover, .Decoracion:hover,
-.Electrodo:hover, .Calzado:hover, .Uñas:hover{
+.Electrodo:hover, .Calzado:hover, .Unas:hover{
     transform: scale(1.2);
     
 
@@ -115,7 +115,7 @@
 
 .MochilaEleccion, .AtuendoEleccion,
 .DecoracionEleccion,.ElectrodoEleccion, .CalzadoEleccion,
-.UñasEleccion{
+.UnasEleccion{
     width: 20%;
     height: 300px;
     border: 4px solid rgb(51, 27, 51);
@@ -171,7 +171,7 @@
     
 }
 
-.Uñas{
+.Unas{
     /* background-image: url("UñasBoton.jpg"); */
     height: 500px;
     right: 10%;
@@ -197,7 +197,7 @@
 
 
     .Mochilas, .Atuendos, .Decoracion,
-    .Electrodo, .Calzado, .Uñas{
+    .Electrodo, .Calzado, .Unas{
     position: static;
     display: block;
     width: 100%;
@@ -213,7 +213,7 @@
 
 .MochilaEleccion, .AtuendoEleccion,
 .DecoracionEleccion,.ElectrodoEleccion, .CalzadoEleccion,
-.UñasEleccion{
+.UnasEleccion{
     width: 100%;
     height: 300px;
     border: 15px solid rgb(51, 27, 51);
@@ -244,8 +244,8 @@
     background-image: url("../Calzado/CalzadoBoton.png");
 }
 
-.Uñas{
-    background-image: url("../Uñas/UñasBoton.png");
+.Unas{
+    background-image: url("../Unas/UnasBoton.png");
 }
 
 
